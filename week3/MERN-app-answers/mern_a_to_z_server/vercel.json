@@ -1,10 +1,10 @@
 {
-    "builds": [
-      {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
-    ],
+    "functions":{
+        "app.js": {
+            "includeFiles": "config/**"
+        },
+        "routes/api/books.js": {}
+    },
     "routes": [
       {
         "src": "/(.*)",
