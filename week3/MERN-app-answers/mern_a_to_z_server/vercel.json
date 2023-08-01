@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm install&& npm start-prod",
+    "buildCommand": "npm install&& npm start",
     "builds": [
       {
         "src": "*.js",
