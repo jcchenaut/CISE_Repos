@@ -1,13 +1,13 @@
 process.env["NODE_CONFIG_DIR"] = './config';
 
 const express = require('express');
-const connectDB = require('../config/db');
+const connectDB = require('./config/db');
 
 const cors = require('cors');
 
 const app = express();
 
-const books = require('./books');
+const books = require('./routes/api/books');
 
 // Connect Database
 connectDB();
