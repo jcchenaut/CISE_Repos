@@ -1,11 +1,11 @@
 {
     "functions":{
         "app.js": {
-            "runtime": "now-node@18.x",
+            "runtime": "@vercel/node@18.x",
             "includeFiles": "config/**"
         },
         "routes/api/books.js": {
-            "runtime": "now-node@18.x"
+            "runtime": "@vercel/node@18.x"
         }
     },
     "routes": [
