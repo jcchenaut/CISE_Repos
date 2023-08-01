@@ -1,9 +1,12 @@
 {
     "functions":{
         "app.js": {
+            "runtime": "@vercel/node",
             "includeFiles": "config/**"
         },
-        "routes/api/books.js": {}
+        "routes/api/books.js": {
+            "runtime": "@vercel/node"
+        }
     },
     "routes": [
       {
