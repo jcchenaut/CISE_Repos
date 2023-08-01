@@ -1,6 +1,3 @@
-const path = require("path")
-process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/")
-
 const express = require('express');
 const connectDB = require('./config/db');
 
