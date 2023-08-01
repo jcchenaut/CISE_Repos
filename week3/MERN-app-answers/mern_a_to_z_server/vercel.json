@@ -1,7 +1,15 @@
 {
     "builds": [
       {
-        "src": "*.js",
+        "src": "app.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "routes/api/books.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "config/db.js",
         "use": "@vercel/node"
       }
     ],
