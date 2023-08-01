@@ -11,11 +11,7 @@
         {
           "src": "config/db.js",
           "use": "@vercel/node"
-        },
-        {
-            "src": "config/default.json",
-            "use": "static"
-          }
+        }
       ],
     "routes": [
       {
