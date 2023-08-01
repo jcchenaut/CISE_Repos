@@ -9,13 +9,14 @@ const books = require('./routes/api/books');
 
 // Connect Database
 connectDB();
+
 app.use(cors({ origin: true, credentials: true }));
 
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('Hello world!'));
 
-// app.use('/api/books', books);
+app.use('/api/books', books);
 
 const port = process.env.PORT || 8082;
 
