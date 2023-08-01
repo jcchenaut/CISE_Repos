@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(process.env.SERVER + `/api/books/${id}`)
+      .get(process.env.REACT_APP_BACKEND_DOMAIN + `api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(process.env.SERVER + `/api/books/${id}`)
+      .delete(process.env.REACT_APP_BACKEND_DOMAIN + `api/books/${id}`)
       .then((res) => {
         navigate('/');
       })

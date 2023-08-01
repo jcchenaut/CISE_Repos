@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(process.env.SERVER + `/api/books/${id}`)
+      .get(process.env.REACT_APP_BACKEND_DOMAIN + `api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(process.env.SERVER + `/api/books/${id}`, data)
+      .put(process.env.REACT_APP_BACKEND_DOMAIN + `api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })

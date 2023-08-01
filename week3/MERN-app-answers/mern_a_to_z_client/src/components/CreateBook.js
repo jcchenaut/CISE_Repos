@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post(process.env.SERVER + '/api/books', book)
+      .post(process.env.REACT_APP_BACKEND_DOMAIN + 'api/books', book)
       .then((res) => {
         setBook({
           title: '',

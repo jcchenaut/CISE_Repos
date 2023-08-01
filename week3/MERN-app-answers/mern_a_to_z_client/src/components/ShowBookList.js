@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get(process.env.SERVER + '/api/books')
+      .get(process.env.REACT_APP_BACKEND_DOMAIN + 'api/books')
       .then((res) => {
         setBooks(res.data);
       })
