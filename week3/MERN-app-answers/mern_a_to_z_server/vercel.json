@@ -1,11 +1,11 @@
 {
     "functions":{
         "app.js": {
-            "runtime": "node@18.0",
+            "runtime": "now-node@18.0",
             "includeFiles": "config/**"
         },
         "routes/api/books.js": {
-            "runtime": "node@18.0"
+            "runtime": "now-node@18.0"
         }
     },
     "routes": [
