@@ -1,3 +1,5 @@
+const path = require("path")
+process.env['NODE_CONFIG_DIR'] = path.join(path.resolve("./"),"config/")
 const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
@@ -7,10 +9,9 @@ const books = require('./routes/api/books');
 
 const app = express();
 
-console.log('connectDB')
 // Connect Database
 connectDB();
-console.log('connectDB end')
+
 // cors
 app.use(cors({ origin: true, credentials: true }));
 
