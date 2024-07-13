@@ -1,0 +1,14 @@
+{
+  "name": "cise_repos",
+  "version": "1.0.0",
+  "description": "CISE_Repos",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
